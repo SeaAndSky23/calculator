@@ -16,5 +16,24 @@ namespace calculator
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbase_Click(object sender, EventArgs e)
+        {
+            basenum sisnum = new basenum();
+            sisnum.Show();
+            this.Close();
+        }
+
+        private void btnascii_Click(object sender, EventArgs e)
+        {
+            ascii codascii = new ascii();
+            codascii.Show();
+            this.Close();
+        }
     }
 }

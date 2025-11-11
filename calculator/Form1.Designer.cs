@@ -29,25 +29,63 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnbase = new System.Windows.Forms.Button();
+            this.btnascii = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(135, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(523, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "CALCULADORA DE SISTEMAS DE NUMERACION Y CODIGO ASCII";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // btnbase
+            // 
+            this.btnbase.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnbase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbase.FlatAppearance.BorderSize = 2;
+            this.btnbase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbase.Location = new System.Drawing.Point(89, 221);
+            this.btnbase.Name = "btnbase";
+            this.btnbase.Size = new System.Drawing.Size(201, 70);
+            this.btnbase.TabIndex = 1;
+            this.btnbase.Text = "CONVERTIDOR DE BASE";
+            this.btnbase.UseVisualStyleBackColor = false;
+            this.btnbase.Click += new System.EventHandler(this.btnbase_Click);
+            // 
+            // btnascii
+            // 
+            this.btnascii.BackColor = System.Drawing.Color.Yellow;
+            this.btnascii.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnascii.FlatAppearance.BorderSize = 2;
+            this.btnascii.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnascii.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnascii.Location = new System.Drawing.Point(492, 221);
+            this.btnascii.Name = "btnascii";
+            this.btnascii.Size = new System.Drawing.Size(201, 70);
+            this.btnascii.TabIndex = 2;
+            this.btnascii.Text = "CONVERTIDOR ASCII";
+            this.btnascii.UseVisualStyleBackColor = false;
+            this.btnascii.Click += new System.EventHandler(this.btnascii_Click);
             // 
             // panel1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 450);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(400, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 450);
-            this.panel2.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(800, 59);
+            this.panel1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -55,20 +93,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnascii);
+            this.Controls.Add(this.btnbase);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INICIO";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnbase;
+        private System.Windows.Forms.Button btnascii;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
     }
 }
 
