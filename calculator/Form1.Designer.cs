@@ -54,7 +54,7 @@
             this.btnbase.FlatAppearance.BorderSize = 2;
             this.btnbase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbase.Location = new System.Drawing.Point(89, 221);
+            this.btnbase.Location = new System.Drawing.Point(92, 157);
             this.btnbase.Name = "btnbase";
             this.btnbase.Size = new System.Drawing.Size(201, 70);
             this.btnbase.TabIndex = 1;
@@ -69,7 +69,7 @@
             this.btnascii.FlatAppearance.BorderSize = 2;
             this.btnascii.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnascii.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnascii.Location = new System.Drawing.Point(492, 221);
+            this.btnascii.Location = new System.Drawing.Point(487, 157);
             this.btnascii.Name = "btnascii";
             this.btnascii.Size = new System.Drawing.Size(201, 70);
             this.btnascii.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 59);
+            this.panel1.Size = new System.Drawing.Size(834, 59);
             this.panel1.TabIndex = 3;
             // 
             // Form1
@@ -92,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnascii);
             this.Controls.Add(this.btnbase);

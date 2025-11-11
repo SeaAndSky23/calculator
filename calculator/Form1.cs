@@ -26,14 +26,14 @@ namespace calculator
         {
             basenum sisnum = new basenum();
             sisnum.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnascii_Click(object sender, EventArgs e)
         {
-            ascii codascii = new ascii();
+            ASCII codascii = new ASCII();
             codascii.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
