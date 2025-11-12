@@ -19,7 +19,6 @@ namespace calculator
 
         private void btnAsciiATexto_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string entrada = txtEntrada.Text.Trim();
@@ -45,22 +44,20 @@ namespace calculator
         private void btnTextoAAscii_Click(object sender, EventArgs e)
         {
             string texto = txtEntradaa.Text;
-            string resultado = "";
-
+            StringBuilder asciiBinario = new StringBuilder();
             foreach (char c in texto)
             {
-                // Convierte cada carácter a su valor ASCII (7 bits)
+                // ASCII de 7 bits
                 int ascii = (int)c;
-                string binario = Convert.ToString(ascii, 2).PadLeft(7, '0'); // 7 bits
-                resultado += binario + " ";
+                string binario7 = Convert.ToString(ascii, 2).PadLeft(7, '0');
+                asciiBinario.Append(binario7 + " ");
+
+                txtascii.Text = asciiBinario.ToString().Trim();
             }
-
-            txtResultadoa.Text = resultado.Trim();
         }
-
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
-            txtResultadoa.Text = "";
+            txtascii.Text = "";
             txtEntradaa.Text = "";
         }
 

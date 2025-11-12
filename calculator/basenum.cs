@@ -27,24 +27,47 @@ namespace calculator
             {
                 string resultado = "";
 
+                // DECIMAL
                 if (baseInicial == "Decimal" && baseFinal == "Binario")
                     resultado = DecimalABinario(int.Parse(numeroIngresado));
 
                 else if (baseInicial == "Decimal" && baseFinal == "Hexadecimal")
                     resultado = DecimalAHexadecimal(int.Parse(numeroIngresado));
 
+                else if (baseInicial == "Decimal" && baseFinal == "Octal")
+                    resultado = DecimalAOctal(int.Parse(numeroIngresado));
+
+                // BINARIO
                 else if (baseInicial == "Binario" && baseFinal == "Decimal")
                     resultado = BinarioADecimal(numeroIngresado).ToString();
 
                 else if (baseInicial == "Binario" && baseFinal == "Hexadecimal")
                     resultado = BinarioAHexadecimal(numeroIngresado);
 
+                else if (baseInicial == "Binario" && baseFinal == "Octal")
+                    resultado = BinarioAOctal(numeroIngresado);
+
+                // HEXADECIMAL
                 else if (baseInicial == "Hexadecimal" && baseFinal == "Decimal")
                     resultado = HexadecimalADecimal(numeroIngresado).ToString();
 
                 else if (baseInicial == "Hexadecimal" && baseFinal == "Binario")
                     resultado = HexadecimalABinario(numeroIngresado);
 
+                else if (baseInicial == "Hexadecimal" && baseFinal == "Octal")
+                    resultado = HexadecimalAOctal(numeroIngresado);
+
+                // OCTAL
+                else if (baseInicial == "Octal" && baseFinal == "Decimal")
+                    resultado = OctalADecimal(numeroIngresado).ToString();
+
+                else if (baseInicial == "Octal" && baseFinal == "Binario")
+                    resultado = OctalABinario(numeroIngresado);
+
+                else if (baseInicial == "Octal" && baseFinal == "Hexadecimal")
+                    resultado = OctalAHexadecimal(numeroIngresado);
+
+                // MISMA BASE
                 else if (baseInicial == baseFinal)
                     resultado = numeroIngresado;
 
@@ -144,6 +167,39 @@ namespace calculator
             }
 
             return hex;
+        }
+        private string DecimalAOctal(int numero)
+        {
+            return Convert.ToString(numero, 8);
+        }
+
+        private int OctalADecimal(string octal)
+        {
+            return Convert.ToInt32(octal, 8);
+        }
+
+        private string BinarioAOctal(string binario)
+        {
+            int decimalValue = Convert.ToInt32(binario, 2);
+            return Convert.ToString(decimalValue, 8);
+        }
+
+        private string OctalABinario(string octal)
+        {
+            int decimalValue = Convert.ToInt32(octal, 8);
+            return Convert.ToString(decimalValue, 2);
+        }
+
+        private string HexadecimalAOctal(string hex)
+        {
+            int decimalValue = Convert.ToInt32(hex, 16);
+            return Convert.ToString(decimalValue, 8);
+        }
+
+        private string OctalAHexadecimal(string octal)
+        {
+            int decimalValue = Convert.ToInt32(octal, 8);
+            return decimalValue.ToString("X");
         }
 
         private void btnlimpiar2_Click(object sender, EventArgs e)

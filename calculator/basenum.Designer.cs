@@ -78,14 +78,16 @@ namespace calculator
             // cmbBaseInicial
             // 
             this.cmbBaseInicial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBaseInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBaseInicial.FormattingEnabled = true;
             this.cmbBaseInicial.Items.AddRange(new object[] {
-            "Binario",
             "Decimal",
+            "Binario",
+            "Octal",
             "Hexadecimal"});
             this.cmbBaseInicial.Location = new System.Drawing.Point(211, 167);
             this.cmbBaseInicial.Name = "cmbBaseInicial";
-            this.cmbBaseInicial.Size = new System.Drawing.Size(181, 21);
+            this.cmbBaseInicial.Size = new System.Drawing.Size(181, 24);
             this.cmbBaseInicial.TabIndex = 4;
             // 
             // label4
@@ -101,14 +103,16 @@ namespace calculator
             // cmbBaseFinal
             // 
             this.cmbBaseFinal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBaseFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBaseFinal.FormattingEnabled = true;
             this.cmbBaseFinal.Items.AddRange(new object[] {
-            "Binario",
             "Decimal",
+            "Binario",
+            "Octal",
             "Hexadecimal"});
             this.cmbBaseFinal.Location = new System.Drawing.Point(466, 167);
             this.cmbBaseFinal.Name = "cmbBaseFinal";
-            this.cmbBaseFinal.Size = new System.Drawing.Size(192, 21);
+            this.cmbBaseFinal.Size = new System.Drawing.Size(192, 24);
             this.cmbBaseFinal.TabIndex = 6;
             // 
             // txtResultado
